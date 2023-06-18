@@ -13,8 +13,10 @@
 * [Future scope of project](#future-scope-of-project)
 
 ## Overview
-
-<img src="img/body_fat.jpg">
+</br></br>
+<div align="center">
+  <img src="img/body_fat.jpg">
+</div>
 
 ## Motivation
 
