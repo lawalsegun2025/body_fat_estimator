@@ -15,7 +15,7 @@
 ## Overview
 </br></br>
 <div align="center">
-  <img src="img/body_fat.jpg">
+  <img src="6-types-of-body-fat.jpg">
 </div>
 
 ## Motivation
