@@ -13,6 +13,8 @@
 * [Future scope of project](#future-scope-of-project)
 
 ## Overview
+
+This project model estimates the percentage of body fat in a human's body based on parameters such as weight, height, hip size and many more.
 </br></br>
 <div align="center">
   <img src="img/6-types-of-body-fat.jpg">
