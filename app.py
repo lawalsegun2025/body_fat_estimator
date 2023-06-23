@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template
+from markupsafe import escape
 import pickle
 
 file = open("body_fat_model.pkl", "rb")
@@ -26,8 +27,8 @@ def predict():
         string = "Percentage of Body Fat Estimated is: " + str(prediction)+"%"
 
         return render_template("show.html", string=string)
-    
+
     return render_template("home.html")
-    
+
 if __name__=="__main__":
     app.run(debug=True)
