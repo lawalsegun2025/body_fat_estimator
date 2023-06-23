@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>BodyFat Estimator</title>
+</head>
+
+<body>
+
+    <!-- Alert -->
+    <div class="container my-4">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading text-center">{{string}}</h4>
+            <hr>
+        </div>
+    </div>
+    <div class="container my-4">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading text-center">Information Regarding BodyFat Estimation</h4>
+            <hr>
+            <p>
+                <div class="markdown-converter__text--rendered">
+                    <h3>Context</h3>
+                    <p>Lists estimates of the percentage of body fat determined by underwater<br> weighing and various body circumference measurements for 252 men.</p>
+                    <h3>Educational use of the dataset</h3>
+                    <p>This data set can be used to illustrate multiple regression techniques. Accurate measurement of body fat is inconvenient/costly and it is desirable to have easy methods of estimating body fat that are not inconvenient/costly.</p>
+                    <h3>Content</h3>
+                    <p>The variables listed below, from left to right, are:</p>
+                    <ol>
+                        <li>Density determined from underwater weighing</li>
+                        <li>Percent body fat from Siri's (1956) equation</li>
+                        <li>Age (years)</li>
+                        <li>Weight (lbs)</li>
+                        <li>Height (inches)</li>
+                        <li>Neck circumference (cm)</li>
+                        <li>Chest circumference (cm)</li>
+                        <li>Abdomen 2 circumference (cm)</li>
+                        <li>Hip circumference (cm)</li>
+                        <li>Thigh circumference (cm)</li>
+                        <li>Knee circumference (cm)</li>
+                        <li>Ankle circumference (cm)</li>
+                        <li>Biceps (extended) circumference (cm)</li>
+                        <li>Forearm circumference (cm)</li>
+                        <li>Wrist circumference (cm)</li>
+                    </ol>
+                    <p>(Measurement standards are apparently those listed in Benhke and Wilmore (1974), pp. 45-48 where, for instance, the abdomen 2 circumference is measured "laterally, at the level of the iliac crests, and anteriorly, at the umbilicus".)</p>
+                    <p>These data are used to produce the predictive equations for lean body weight given in the abstract "Generalized body composition prediction equation for men using simple measurement techniques", K.W. Penrose, A.G. Nelson, A.G. Fisher,
+                        FACSM, Human Performance Research Center, Brigham Young University, Provo, Utah 84602 as listed in <em>Medicine and Science in Sports and
+                            Exercise</em>, vol. 17, no. 2, April 1985, p. 189. (The predictive equation were obtained from the first 143 of the 252 cases that are listed below). </p>
+                    <h3>More details</h3>
+                    <p>A variety of popular health books suggest that the readers assess their health, at least in part, by estimating their percentage of body fat. In Bailey (1994), for instance, the reader can estimate body fat from tables using their
+                        age and various skin-fold measurements obtained by using a caliper. Other texts give predictive equations for body fat using body circumference measurements (e.g. abdominal circumference) and/or skin-fold measurements. See, for
+                        instance, Behnke and Wilmore (1974), pp. 66-67; Wilmore (1976), p. 247; or Katch and McArdle (1977), pp. 120-132).
+                    </p>
+                    <p>The percentage of body fat for an individual can be estimated once body density has been determined. Folks (e.g. Siri (1956)) assume that the body consists<br> of two components - lean body tissue and fat tissue. Letting:</p>
+                    <ul>
+                        <li>D = Body Density (gm/cm^3)</li>
+                        <li>A = proportion of lean body tissue</li>
+                        <li>B = proportion of fat tissue (A+B=1)</li>
+                        <li>a = density of lean body tissue (gm/cm^3)</li>
+                        <li>b = density of fat tissue (gm/cm^3)</li>
+                    </ul>
+                    <p>we have:</p>
+                    <p>D = 1/[(A/a) + (B/b)]</p>
+                    <p>solving for B we find:</p>
+                    <p>B = (1/D)*[ab/(a-b)] - [b/(a-b)].</p>
+                    <p>Using the estimates a=1.10 gm/cm^3 and b=0.90 gm/cm^3 (see Katch and McArdle (1977), p. 111 or Wilmore (1976), p. 123) we come up with "Siri's equation":</p>
+                    <p>Percentage of Body Fat (i.e. 100*B) = 495/D - 450.</p>
+                    <p>Volume, and hence body density, can be accurately measured a variety of ways. The technique of underwater weighing "computes body volume as the difference between body weight measured in air and weight measured during water submersion.
+                        In other words, body volume is equal to the loss of weight in<br> water with the appropriate temperature correction for the water's density" (Katch and McArdle (1977), p. 113). Using this technique,
+                    </p>
+                    <p>Body Density = WA/[(WA-WW)/c.f. - LV]</p>
+                    <p>where:</p>
+                    <ul>
+                        <li>WA = Weight in air (kg)</li>
+                        <li>WW = Weight in water (kg)</li>
+                        <li>c.f. = Water correction factor (=1 at 39.2 deg F as one-gram of water occupies exactly one cm^3 at this temperature, =.997 at 76-78 deg F)</li>
+                        <li>LV = Residual Lung Volume (liters)</li>
+                    </ul>
+                    <p>(Katch and McArdle (1977), p. 115). Other methods of determining body volume are given in Behnke and Wilmore (1974), p. 22 ff.</p>
+                    <h3>Source</h3>
+                    <p>The data were generously supplied by Dr. A. Garth Fisher who gave permission to freely distribute the data and use for non-commercial purposes. </p>
+                    <p>Roger W. Johnson<br> Department of Mathematics &amp; Computer Science<br> South Dakota School of Mines &amp; Technology<br> 501 East St. Joseph Street<br> Rapid City, SD 57701</p>
+                    <p>email address: <a rel="noreferrer nofollow" href="mailto:rwjohnso@silver.sdsmt.edu">rwjohnso@silver.sdsmt.edu</a><br> web address: <a rel="noreferrer nofollow" href="http://silver.sdsmt.edu/~rwjohnso">http://silver.sdsmt.edu/~rwjohnso</a></p>
+                    <h3>References</h3>
+                    <p>Bailey, Covert (1994). <em>Smart Exercise: Burning Fat, Getting Fit</em>, Houghton-Mifflin Co., Boston, pp. 179-186.</p>
+                    <p>Behnke, A.R. and Wilmore, J.H. (1974). <em>Evaluation and Regulation of Body Build and
+                            Composition</em>, Prentice-Hall, Englewood Cliffs, N.J.</p>
+                    <p>Siri, W.E. (1956), "Gross composition of the body", in <em>Advances in Biological and Medical
+                            Physics</em>, vol. IV, edited by J.H. Lawrence and C.A. Tobias, Academic Press, Inc., New York.
+                    </p>
+                    <p>Katch, Frank and McArdle, William (1977). <em>Nutrition, Weight Control, and Exercise</em>, Houghton Mifflin Co., Boston.</p>
+                    <p>Wilmore, Jack (1976). <em>Athletic Training and Physical Fitness: Physiological Principles of the
+                            Conditioning Process</em>, Allyn and Bacon, Inc., Boston.</p>
+                </div>
+                <p>
+        </div>
+    </div>
+
+    <div class="container">
+        <p><b>{{inf}}</b></p>
+        <a href="/">
+            <div class="text-center">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go Back</button>
+            </div>
+        </a>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+</body>
+
+</html>
