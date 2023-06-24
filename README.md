@@ -1,6 +1,7 @@
 # Body Fat Estimator
 
 ## Table of Content
+* [Demo](#demo)
 * [Overview](#overview)
 * [Motivation](#motivation)
 * [Problem Solving Steps](#problem-solving-steps)
@@ -11,6 +12,16 @@
 * [Model Performance](#model-performance)
 * [Deployment](#deployment)
 * [Future scope of project](#future-scope-of-project)
+
+## Demo
+
+
+
+
+
+https://github.com/lawalsegun2025/body_fat_estimator/assets/94943377/a0d05d36-540e-4a63-b798-69e1a3de09be
+
+
 
 ## Overview
 
