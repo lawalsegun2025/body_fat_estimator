@@ -7,6 +7,7 @@
 * [About Dataset](#about-dataset)
 * [Data Cleaning Techniques](#data-cleaning-techniques)
 * [Exploratory Data Analysis](#exploratory-data-analysis)
+* [Feature Selection](#feature-selection)
 * [Model Building](#model-building)
 * [Model Performance](#model-performance)
 * [Deployment](#deployment)
@@ -191,7 +192,14 @@ for i in range(len(cols)):
 
 ```
 
+Feature Selection
 
+Two feature selection techniques were used;
+
+* ExtraTree Regressor
+* Mutual Information Regressor
+
+Variance Inflation Factor was also used to measure how much the behaviour (variance) of an independent variable is influenced or inflated by its interaction/correlation with the other independent variables.
 
 ## Model Building
 
