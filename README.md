@@ -215,7 +215,12 @@ Two models were built;
 * DecisionTree Regressor and
 * RandomForestRegressor
 
-The decision tree was too large so we decided to prune the tree by explorint the `cost_complexity_pruning_path`.
+The decision tree was too large so we decided to prune the tree by explorint the `cost_complexity_pruning_path`. We were able to get an optimal `ccp_alpha` value of 1. 
+
+The graph below shows the accuracy vs alpha value of both the testing and training data.</br></br>
+<div align="center">
+  <img src="img/alpha.png">
+</div>
 
 ## Model Performance
 
