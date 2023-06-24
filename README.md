@@ -137,6 +137,35 @@ Wilmore, Jack (1976). Athletic Training and Physical Fitness: Physiological Prin
 
 ## Data Cleaning Techniques
 
+The dataset used is fairly clean. The following function was used to visualize **distribution analysis**
+'''python
+# function that plots the distribution
+def draw_plots(df, col):
+    
+    plt.figure(figsize=(20, 7))
+    plt.subplot(1, 3, 1)
+    plt.hist(df[col], color="magenta")
+    
+    plt.subplot(1, 3, 2)
+    stats.probplot(df[col], dist="norm", plot=plt)
+    
+    plt.subplot(1, 3, 3)
+    sns.boxplot(df[col], color="magenta")
+    
+    plt.show()
+    
+cols = list(df.columns)
+for i in range(len(cols)):
+    
+    print(f"Distribution plots for the feature {cols[i]} are shown below ")
+    
+    draw_plots(df, cols[i])
+    
+    print("."*100)
+
+'''
+
+
 ## Exploratory Data Analysis
 
 ## Model Building
