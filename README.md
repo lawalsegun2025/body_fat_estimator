@@ -224,6 +224,10 @@ The graph below shows the accuracy vs alpha value of both the testing and traini
 
 ## Model Performance
 
+DecisionTree Regressor model had an accurcy of 92.7% while the RandomForest Regressor Model had an accuracy of 96.2%. 
+
+After attempting to improve the model performance by Hyperparameter tunning using RandomizedSerachCV we obsered that there was a drop in the performance of the tuned model, so we decided to go with the initial model parameters.
+
 ## Deployment
 
 ## Future scope of project
