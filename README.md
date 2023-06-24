@@ -10,8 +10,7 @@
 * [Feature Selection](#feature-selection)
 * [Model Building](#model-building)
 * [Model Performance](#model-performance)
-* [Deployment](#deployment)
-* [Future scope of project](#future-scope-of-project)
+
 
 ## Demo
 
@@ -228,9 +227,7 @@ DecisionTree Regressor model had an accurcy of 92.7% while the RandomForest Regr
 
 After attempting to improve the model performance by Hyperparameter tunning using RandomizedSerachCV we obsered that there was a drop in the performance of the tuned model, so we decided to go with the initial model parameters.
 
-## Deployment
 
-## Future scope of project
 
 
 
