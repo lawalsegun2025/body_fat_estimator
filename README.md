@@ -212,8 +212,10 @@ After carrying out the feature selection techniques we selected 5 features out o
 ## Model Building
 
 Two models were built;
-* DecissionTree Regressor and
+* DecisionTree Regressor and
 * RandomForestRegressor
+
+The decision tree was too large so we decided to prune the tree by explorint the `cost_complexity_pruning_path`.
 
 ## Model Performance
 
