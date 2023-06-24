@@ -137,8 +137,34 @@ Wilmore, Jack (1976). Athletic Training and Physical Fitness: Physiological Prin
 
 ## Data Cleaning Techniques
 
-The dataset used is fairly clean. The following function was used to visualize **distribution analysis**
-'''python
+The dataset used was already cleaned. 
+
+## Exploratory Data Analysis
+
+The following two functions was used to visualize KDE Distribution Plots and Distribution analysis.
+
+**KDE Distribution Plots**
+```python
+# define a distribution function
+def plot_displots(col):
+    
+    plt.figure(figsize=(10, 7))
+    sns.kdeplot(df["BodyFat"], color="magenta", 
+                label="Bodyfat")
+    sns.kdeplot(df[col], color="red", 
+                label=col)
+    plt.legend();
+    plt.show()
+    
+cols =list(df.columns)
+for i in cols:
+    print(f"Distribution plots for {i} feature is shown below")
+    plot_displots(i);
+    print("."*100);
+```
+
+**distribution analysis**
+```python
 # function that plots the distribution
 def draw_plots(df, col):
     
@@ -163,10 +189,9 @@ for i in range(len(cols)):
     
     print("."*100)
 
-'''
+```
 
 
-## Exploratory Data Analysis
 
 ## Model Building
 
