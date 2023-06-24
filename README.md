@@ -201,7 +201,19 @@ Two feature selection techniques were used;
 
 Variance Inflation Factor was also used to measure how much the behaviour (variance) of an independent variable is influenced or inflated by its interaction/correlation with the other independent variables.
 
+After carrying out the feature selection techniques we selected 5 features out of the initial 15 features. The features selected includes;
+
+1. Density
+2. Abdomen
+3. Chest
+4. Weight and
+5. Hip
+
 ## Model Building
+
+Two models were built;
+* DecissionTree Regressor and
+* RandomForestRegressor
 
 ## Model Performance
 
