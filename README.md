@@ -24,7 +24,7 @@ https://github.com/lawalsegun2025/body_fat_estimator/assets/94943377/a0d05d36-54
 
 ## Overview
 
-This project builds a model that predicts whether a student can get job placement opportunity after graduating based on his/her academic performance, work experiences, projects etc. 
+This project model estimates the percentage of body fat in a human's body based on parameters such as weight, height, hip size and many more.
 </br></br>
 <div align="center">
   <img src="img/6-types-of-body-fat.jpg">
