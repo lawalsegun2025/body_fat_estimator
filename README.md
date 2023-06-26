@@ -3,6 +3,7 @@
 ## Table of Content
 * [Demo](#demo)
 * [Overview](#overview)
+* [Motivation](#motivation)
 * [Problem Solving Steps](#problem-solving-steps)
 * [About Dataset](#about-dataset)
 * [Data Cleaning Techniques](#data-cleaning-techniques)
@@ -29,6 +30,10 @@ This project model estimates the percentage of body fat in a human's body based 
 <div align="center">
   <img src="img/6-types-of-body-fat.jpg">
 </div>
+
+## Motivation
+
+Your body fat percentage is a value that tells you how much of your body weight is made up of fat.  In terms of your overall health, your body fat percentage can be one of the most useful numbers available to you, more than how much you weigh and even more than your Body Mass Index (BMI).
 
 ## Problem Solving Steps
 1. Load the dataset into a pandas Data Frame
